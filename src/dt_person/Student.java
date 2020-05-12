@@ -10,7 +10,7 @@ package dt_person;
  * @author Crestfall
  */
 public class Student extends Person {
-
+    
     public String getProgram() {
         return studentProgram;
     }
@@ -45,8 +45,7 @@ public class Student extends Person {
     private double studentFee;
 
     public Student(String name, String address, String program, int year, double fee) {
-        setName(name);
-        setAddress(address);
+        super(name, address);
         studentProgram = program;
         studentYear = year;
         studentFee = fee;
