@@ -17,6 +17,8 @@ public class Mainclass {
     public static void main(String[] args) {
         Student student = new Student("Davey", "Robinson", "BIS", 2023, 420000);
         System.out.println(student);
+        Staff staff = new Staff("Kate Tobias", "Bean News Box", "Bean News University", 0);
+        System.out.println(staff);
     }
 
 }

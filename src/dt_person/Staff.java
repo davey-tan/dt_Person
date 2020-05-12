@@ -29,7 +29,7 @@ public class Staff extends Person{
 
     @Override
     public String toString() {
-        return "Staff[" + super.toString() + ", school = " + staffSchool + ", pay = " + staffPay;
+        return "Staff[" + super.toString() + ", school = " + staffSchool + ", pay = " + staffPay + "]";
     }
 
     private String staffSchool;
