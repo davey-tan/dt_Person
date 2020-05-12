@@ -9,28 +9,34 @@ package dt_person;
  *
  * @author Crestfall
  */
-public class Staff {
-    
+public class Staff extends Person{
+
     public String getSchool() {
         return staffSchool;
     }
-    
+
     public void setSchool(String school) {
         staffSchool = school;
     }
-    
+
     public double getPay() {
         return staffPay;
     }
-    
+
     public void setPay(double pay) {
         staffPay = pay;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Staff[" + super.toString() + ", school = " + staffSchool + ", pay = " + staffPay;
+    }
+
     private String staffSchool;
     private double staffPay;
-    
-    public Staff(String school, double pay) {
+
+    public Staff(String name, String address, String school, double pay) {
+        super(name, address);
         staffSchool = school;
         staffPay = pay;
     }
