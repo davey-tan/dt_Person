@@ -32,8 +32,8 @@ public class Person {
         return "Person[name = " + personName + ", address = " + personAddress + "]";
     }
     
-    String personName;
-    String personAddress;
+    private String personName = "";
+    private String personAddress = "";
     
     public Person(String name, String address) {
         personName = name;
